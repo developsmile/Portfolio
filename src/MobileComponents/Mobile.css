@@ -1,0 +1,520 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+li,p,h1,h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.intro-container,.skill-container,.project-container,.contact-container{
+    position: relative;
+}
+.intro-container > .user-img,.p1,h1,.p2,.desc,.b-img ,.menu-button{
+    position: absolute;
+}
+.project-container >.h2,.h21,h1,.project-title,.project-title,.carousel1,.carousel2{
+    position: absolute;
+}
+.skill-container > .coding-img,.right{
+    position: absolute;
+}
+.contact-container,.h1-cm,.contact-form,.social-link,img{
+    position: absolute;
+}
+/* intro */
+@media screen and (min-width: 360px){
+    .intro-container > .close{
+        visibility: hidden;
+    }
+    .intro-container{
+        width: 1364px;
+        height: 950px;
+    }
+    .menu-button{
+        display: none;
+    }
+    nav > ul{
+        display: flex;
+        justify-content: center;
+        left: 356px;
+        top: 50px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    nav > ul > li > a{
+        margin-left: 35px;
+        padding: 5px 20px;
+        border-radius: 25px;
+        transition: all .5s ease;
+    }
+    nav > ul > li:hover a{
+        background-color: #392A59;
+        color: white;
+    }
+    .intro-container > .user-img{
+        width: 200px;
+        height: 200px;
+        left: 582px;
+        top: 155px;
+        border-radius: 50%;
+        border: 5px solid #392A59;
+    }
+    .intro-container > .p1{
+        width: 217px;
+        height: 33px;
+        left: 573px;
+        top: 426px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .intro-container > h1{
+        width: 267px;
+        height: 73px;
+        left: 554px;
+        top: 470px;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 73px;
+    }
+    .intro-container > .p2{
+        width: 358px;
+        height: 53px;
+        left: 503px;
+        top: 550px;
+        font-size: 50px;
+        line-height: 61px;
+        background: linear-gradient(180deg, #392A59 71.15%, rgba(255, 255, 255, 0.98) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .intro-container > .desc{
+        width: 795px;
+        height: 183px;
+        left: 284px;
+        top: 700px;
+        background: #392A59;
+        box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 225px;
+    }
+    .intro-container > .desc > p{
+        width: 543px;
+        height: 136px;
+        margin: 40px auto;
+        word-spacing: 2px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+}
+/* skills */
+@media screen and (min-width: 360px){
+    .skill-container{
+        width: 1365px;
+        height: 500px;
+    }
+    .skill-container > .coding-img{
+        width: 500px;
+        height: 400px;
+        left: 79px;
+        top: 50px;
+        border-radius: 75px;
+    }
+    .skill-container > .right{
+        width: 517px;
+        height: 439px;
+        left: 762px;
+        top: 50px;
+        padding-top: 50px;
+    }
+    .skill-container > .right > h2{
+        position: absolute;
+        left: 162px;
+        top: 0px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .skill-container > .right > .skill-progres{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 25px 24px 0px 0px;
+    }
+    .skill-container > .right > .skill-progres > .progress-bar{
+        width: 400px;
+        height: 16px;
+        margin-left: 70px;
+        border-radius: 25px;
+    }
+}
+/* project */
+@media screen and (min-width: 360px){
+    .project-container{
+        width: 1365px;
+        height: 720px;
+    }
+    .project-container > .project-title{
+        width: 205px;
+        height: 44px;
+        left: 580px;
+        top: 68px;
+        font-size: 50px;
+        line-height: 61px;
+    }
+    .project-container > .h2{
+        width: 156px;
+        height: 30px;
+        left: 230px;
+        top: 194px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .project-container > .carousel1,.carousel2{
+        width: 435px;
+        height: 348px;
+        left: 105px;
+        border-radius: 26px;
+    }
+    .project-container > .carousel1{
+        top: 250px;
+    }
+    .project-container > .h21{
+        width: 139px;
+        height: 30px;
+        left: 953px;
+        top: 194px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .project-container > .carousel2{
+        left: 815px;
+    }
+}
+/* contacts */
+@media screen and (min-width: 360px){
+    .contact-container{
+        width: 1364px;
+        height: 700px;
+        background-color: #C4C4C4;
+    }
+    .contact-container > .h1-cm{
+        width: 266px;
+        height: 65px;
+        left: 170px;
+        top: 76px;
+        font-size: 30px;
+        line-height: 77px;
+    }
+    .contact-container > h1{
+        position: absolute;
+        top: 110px;
+        left: 870px;
+    }
+    .contact-container > .contact-form{
+        width: 400px;
+        height: 400px;
+        left: 797px;
+        top: 178px;
+        background-color: #ffffff;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: baseline; */
+        justify-content: space-evenly;
+        padding: 20px  40px;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+    }
+    .contact-container > .contact-form > .mb{
+        display: none;
+    }
+    .contact-container > .social-link{
+        width: 400px;
+        height: 103px;
+        left: 105px;
+        top: 600px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contact-container > .social-link > a{
+        color: white;
+        font-size: 60px;
+        transition: all .5s ease-in-out;
+    }
+    .contact-container > .social-link > a:hover{
+        transform: scale(1.6);
+        text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(253, 253, 255);
+    }
+    .contact-container > img{
+        width: 400px;
+        height: 500px;
+        left: 105px;
+        top: 178px;
+        border-radius: 25px;
+    }
+    .contact-container > .contact-form > .textfild{
+        margin-top: 30px;
+    }
+    .contact-container > .contact-form > .send-button{
+        margin-top: 50px;
+        border-radius: 25px;
+        background-color: #000000;
+    }
+}
+
+/* this is for mobile design */
+/* intro */
+@media screen and (max-width: 360px){
+    nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    .intro-container{
+        width: 360px;
+        height: 800px;
+    }
+    .intro-container > .bg-img{
+        width: 360px;
+        height: 800px;
+        left: 0px;
+        top: 0px;
+        background: url("/public/assets/bgintro.jpg");
+        background-size: cover;
+    }
+    .intro-container > .menu-button{
+        font-size: 30px;
+        right: 20px;
+        top: 20px;
+    }
+    .intro-container > p{
+        width: 146px;
+        height: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .intro-container > .p1{
+        left: 110px;
+        top: 109px;
+    }
+    .intro-container > .p2{
+        left: 107px;
+        top: 209px;
+    }
+    .intro-container > h1{
+        width: 178px;
+        height: 48px;
+        left: 94px;
+        top: 148px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .intro-container > .user-img{
+        width: 169px;
+        height: 175px;
+        left: 98px;
+        top: 262px;
+        border-radius: 50%;
+    }
+    .intro-container > .desc{
+        width: 277px;
+        height: 227px;
+        left: 41px;
+        top: 470px;
+        word-break: 2px;
+        background: rgba(196, 196, 196, 0.61);
+        box-shadow: 3px 3px 3px 2px #000000;
+        border-radius: 25px;
+        padding: 40px 10px;
+        text-align: center;
+    }
+}
+/* skills */
+@media screen and (max-width: 360px){
+    .skill-container{
+        width: 360px;
+        height: 590px;
+        background: #FFFFFF;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    }
+    .skill-container > .coding-img{
+        width: 360px;
+        height: 240px;
+    }
+    .skill-container > .right > h2{
+        width: 116px;
+        height: 44px;
+        margin: 40px 122px 0px 122px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .skill-container > .right > .skill-progres{
+        justify-content: space-around;
+        margin: 15px 24px 0px 24px;
+    }
+    .skill-container > .right > .skill-progres > .progress-bar{
+        width: 241px;
+        height: 16px;
+        margin-left: 70px;
+        border-radius: 25px;
+    }
+}
+/* project */
+@media screen and (max-width: 360px){
+    .project-container{
+        width: 360px;
+        height: 800px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.555);
+    }
+    .project-container > h1{
+        left: 101px;
+        top: 32px;
+        width: 186px;
+        height: 44px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .project-container > .h2{
+        width: 126px;
+        height: 24px;
+        left: 117px;
+        top: 112px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .project-container > .carousel1,.carousel2{
+        width: 360px;
+        height: 250px;
+    }
+    .project-container > .carousel1{
+        top: 155px;
+    }
+    .project-container > .carousel2{
+        top: 500px;
+    }
+    .project-container > .h21{
+        width: 126px;
+        height: 24px;
+        left: 120px;
+        top: 463px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+/* conatct */
+@media screen and (max-width: 360px){
+    .contact-container{
+        width: 360px;
+        height: 566px;
+    }
+    .contact-container > img{
+        display: none;
+    }
+    .contact-container > .h1-cm{
+        width: 213px;
+        height: 48px;
+        left: 73px;
+        top: 41px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .contact-container .contact-form{
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        width: 299px;
+        height: 400px;
+        left: 30px;
+        top: 122px;
+        background: rgba(196, 196, 196, 0.35);
+        border-radius: 25px;
+        padding: 40px;
+    }
+    .contact-container > .contact-form > h1{
+        font-size: 25px;
+        font-weight: 800;
+        font-family: 'Inter';
+        font-style: normal;
+    }
+    .contact-container > .contact-form > .textfild{
+        width: 220px;
+        margin-top: 20px;
+        color: white;
+    }
+    .contact-container >.contact-form > .send-button{
+        width :220px;
+        margin-top: 40px;
+        background-color: black;
+        border-radius: 25px;
+    }
+    .contact-container > .social-link{
+        width: 300px;
+        height: 40px;
+        left: 30px;
+        top: 550px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .contact-container > .social-link > .icon{
+        font-size: 20px;
+    }
+    .contact-container > .social-link > .icon:hover{
+        font-size: 20px;
+        color: black;
+        transform: scale(1.2);
+    }
+}
+/* menu */
+@media screen and (max-width: 360px){
+    .menu-container{
+        width: 360px;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        right: -360px;
+        z-index: 5;
+        transition: all .3s ease-in;
+    }
+    .menu-container .close{
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        top: 20px;
+        right: 20px;
+    }
+    .menu-container ul{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-container ul li{
+        width: 150px;
+        list-style: none;
+        font-size: 20px;
+        margin: 20px;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 5px 10px;
+    }
+    .menu-container ul li:hover{
+        transform: scale(1.2);
+        color: white;
+        border: 1px solid white;
+        border-radius: 25px;
+    }
+    a{
+        color: rgb(226, 225, 225);
+    }
+    .slide-menu{
+        right: 0px;
+        background-color: rgb(20, 34, 34);
+    }
+}
+
