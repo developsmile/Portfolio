@@ -3,6 +3,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+a{
+    color: rgb(0, 0, 0);
+}
 li,p,h1,h2{
     font-family: 'Inter';
     font-style: normal;
@@ -16,7 +19,7 @@ li,p,h1,h2{
 .intro-container > .user-img,.p1,h1,.p2,.desc,.b-img ,.menu-button{
     position: absolute;
 }
-.project-container >.h2,.h21,h1,.project-title,.project-title,.carousel1,.carousel2{
+.project-container >.h2,.h21,h1,.project-title{
     position: absolute;
 }
 .skill-container > .coding-img,.right{
@@ -174,13 +177,21 @@ li,p,h1,h2{
         line-height: 30px;
     }
     .project-container > .carousel1,.carousel2{
+        position: absolute;
         width: 435px;
         height: 348px;
-        left: 105px;
+        top: 250px;
         border-radius: 26px;
     }
+    .project-container >.carousel2:hover .card-desc{
+        opacity: 1;
+    }
+    .project-container >.carousel1:hover .card-desc{
+        opacity: 1;
+    }
+   
     .project-container > .carousel1{
-        top: 250px;
+        left: 105px;
     }
     .project-container > .h21{
         width: 139px;
@@ -518,3 +529,41 @@ li,p,h1,h2{
     }
 }
 
+.card{
+    position: relative;
+    width: 435px;
+    height: 290px;
+    display: flex;
+    flex-direction: column; 
+}
+.card > .card-desc{
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    background-color: #3b246ea6;
+    top: 165px;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+
+}
+.card > .card-desc > h1{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+.card > .card-desc > .demo{
+    font-size: 12px;
+    margin-top: 60px;
+    border: 1px solid white;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 25px;
+}
