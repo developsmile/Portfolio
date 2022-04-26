@@ -13,7 +13,7 @@ function App() {
       <Skill />
       <Project />
       <Contact /> 
-      <Menu menu={menu} setMenu={setMenu} /> 
+      <Menu menu={menu} setMenu={setMenu} />  
       
       
     </div>

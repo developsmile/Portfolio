@@ -14,7 +14,7 @@ const Contact = () => {
            <h2 className='h1-cm'>Contact Us</h2>
            <br />
            <img src="assets/contact.jpg" alt="" />
-           <h1>Send us a Message</h1>
+           <h1 className='send-h1'>Send us a Message</h1>
            <div className="contact-form">
                 <h1 className='mb'>Send us a Message</h1>
                 <TextField className='textfild' id="standard-basic" label="Fullname" variant="standard" />
