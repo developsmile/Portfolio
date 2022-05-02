@@ -1,13 +1,15 @@
 import React from 'react'
 import './mob.css'
-const ItemCard = () => {
+const ItemCard = ({video ,project_name,project_link}) => {
   return (
     <>
         <div className='card'>
-            <img src="assets/coddingimg.jpg" alt=""/>
+          <video autoPlay loop>
+            <source src={video} type="video/mp4" /> 
+          </video>
             <div className="card-desc">
-              <h1 className='project-name'> Resume Builder</h1>
-              <a className='demo' href="/"> Demo</a>
+              <h1 className='project-name'>{project_name}</h1>
+              <a className='demo' href={project_link}> Demo</a>
             </div>
         </div>
     </>

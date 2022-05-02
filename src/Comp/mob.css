@@ -335,6 +335,12 @@
         padding-bottom: 20px;
         margin-left: 10%;
     }
+    .project-container > .web-project > .carousel1{
+        background-color: #3c3c3c4c;
+    }
+    .project-container > .web-design > .carousel2{
+        background-color: #3c3c3c4c;
+    }
     .project-container > .web-project > .h21{
         margin: 10px;
     }
@@ -347,6 +353,13 @@
        margin-bottom: 10px;
    }
    
+   .card > video{
+    width: 100%;
+    height: 100%;
+   }
+   .card > img{
+       width: 100%;
+   }
    .card > .card-desc > .demo{
        text-decoration: none;
        color:#faf7f7;
