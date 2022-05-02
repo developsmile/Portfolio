@@ -1,19 +1,31 @@
-.app{
-    width: 100%;
-    overflow: scroll;
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
 }
+@media screen and (min-width: 451px){
+  .app{
+    width: 90%;
+    height: 500px;
+    margin: 20px 5%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+}
+
+
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 1px;
   }
-  /* Track */
+  
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f1f1f100;
   }
   
-  /* Handle */
- 
-  
-  /* Handle on hover */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0);
+  }
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import CloseIcon from '@mui/icons-material/Close';
-import './Mobile.css'
+import './mob.css'
 const Menu = ({menu, setMenu}) => {
   return (
     <>

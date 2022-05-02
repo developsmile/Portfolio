@@ -1,26 +1,25 @@
 import React from 'react'
-import './Mobile.css'
+import './mob.css'
 import LinearProgress from '@mui/material/LinearProgress';
-import Data from '../data/Skill';
+import {Data} from '../Data/Data';
 const Skill = () => {
   return (
     <>
-        <div className="skill-container" id='skill'>
+        <h2 className='skill-heading' id='skill'>Skills</h2>
+        <div className="skill-container" >
             <img className='coding-img' src="assets/coddingimg.jpg" alt="" />
             <div className="right">
-                <h2>Skills</h2>
                 {
                     Data.map((item,index)=>{
                         return(
                         <div className="skill-progres">
-                            <p>Title</p>
-                            <LinearProgress  variant="determinate" value={34} className="progress-bar"/>
+                            <p>{item.title}</p>
+                            <LinearProgress  variant="determinate" value={item.rate} className="progress-bar"/>
                         </div>
                         )
                     })
                 }
             </div>
-           
         </div>
     </>
   )
