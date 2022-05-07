@@ -4,7 +4,7 @@ const ItemCard = ({video ,project_name,project_link}) => {
   return (
     <>
         <div className='card'>
-          <video autoPlay loop>
+          <video loop autoPlay>
             <source src={video} type="video/mp4" /> 
           </video>
             <div className="card-desc">

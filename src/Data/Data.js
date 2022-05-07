@@ -34,6 +34,11 @@ export const WebProject = [
         video:"assets/resume.mp4",
         project_name:"Portfolio",
         project_link:"https://resume-xi-black.vercel.app/"
+    },
+    {
+        video:"assets/pizzaapp.mp4",
+        project_name:"Pizza UI",
+        project_link:"https://pizza-app-ui.vercel.app/"
     }
 ]
 export const WebDesign = [

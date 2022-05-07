@@ -104,6 +104,9 @@
     .card > .card-desc > .project-name{
         font-size: 7vw;
     }
+    .card > video{
+        width: 100%;
+    }
     .card > .card-desc > .demo{
         text-decoration: none;
         color: #ffffff;

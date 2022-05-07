@@ -13,7 +13,7 @@ const Project = () => {
         <h1 className='project-title'>Projects</h1>
         <div className="web-project">
           <h2 className='h21'>Web Projects</h2>
-          <Carousel className='carousel1' showStatus={false}  showThumbs={false}  showIndicators={false}>
+          <Carousel className='carousel1' showStatus={false}  showThumbs={false}  showIndicators={false} infiniteLoop={true}>
               {
                 WebProject.map(item => <ItemCard video={item.video} project_name={item.project_name} project_link={item.project_link}/>)
               }
